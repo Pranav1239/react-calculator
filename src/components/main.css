@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #424949;
+}
+
+header{
+    margin-top: 4pc;
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fitem{
+    background-color: #333;
+    box-shadow: 0px 5px 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.input{
+    background-color: transparent;
+    text-align: center;
+    font-size: 2.8rem;    
+    color: #fff;
+    border: none;
+    width: 400px;
+    height: 100px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-auto-rows: minmax(60px ,auto);
+    margin: 0px ;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#color{
+    background-color: #222727;
+    color: white;
+    font-weight: 500;
+}
+
+#Clear{
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: #222727;
+    color: white;
+    font-weight: 500;
+}
+
+#Equal{
+    grid-column: 3/5;
+    grid-row: 5;
+    background-color: #222727;
+    color: white;
+    font-weight: 500;
+}
+
+.button{
+    background-color: #333;
+    border: 1px white;
+    color: white;
+    transition: ease-in-out 1s;
+    font-size: 1.5rem;
+}
+
+.button:hover{
+    border: 1px #fff solid;
+}
